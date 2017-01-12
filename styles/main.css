@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.main-body-section{
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  border: 2px solid black;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.main-content-section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid red;
+  height: 100vh;
+}
+.main-content-top{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border: 2px solid black;
+  height: 60px;
+}
+.main-content-bottom{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  border: 2px solid blue;
+  height: 100%;
+}
+.main-content-outer{
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  min-width: 600px;
+  height: 95%;
+  min-height: 500px;
+  background: rgba(255,255,255, .6);
+}
+.main-content-right{
+  position: relative;
+  justify-content: flex-start;
+  width: 39%;
+  height: 100%;
+  border: 2px solid black;
+}
+.main-content-right img{
+  position: absolute;
+  left: -400px;
+}
+.main-content-left{
+  display: flex;
+  justify-content: flex-start;;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  border: 2px solid black;
+}
+.content-left-text-box{
+  width: 90%;
+  min-width: 550px;
+  height:60%;
+  min-height: 400px;
+  background: rgba(0,0,0, .3)
+}
+
+/*Left Side Nav Bar*/
+.nav-bar-inner{
+  width: 250px;
+  height: 100vh;
+  background: #E37401;
+}
+
+
+
+@media (max-width: 1400px){
+  .nav-bar-inner{
+    width: 200px;
+  }
+}
