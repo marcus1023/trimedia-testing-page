@@ -8,8 +8,8 @@ you can use this repo to test and see if what you created will work on the final
 2) get the bottom border anamation for the "Para personas digitales" working 
 
 3) have your project be able to fit nicely into a container with these dimentions:
-  width: 550px;
-  height: 400px;
+  width: 600px;
+  height: 582;
   
   
 
