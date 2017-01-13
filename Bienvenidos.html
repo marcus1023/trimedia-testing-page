@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!-- <html lang="en" ng-app="trimobile"> -->
-<html lang="en" >
+<html lang="en" ng-app="trimobile">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +7,14 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/video.css">
-    <link rel="stylesheet" href="./styles/firefox.css">
+    <!-- <link rel="stylesheet" href="./styles/firefox.css"> -->
     <link rel="stylesheet" href="./styles/slices.css">
-    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"> -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="shortcut icon" href="img/menu-logo-1.png">
 
 </head>
 
-<main >
+<main ng-controller="mainController">
   <section class="video-container">
     <video loop muted autoplay poster="img/dev-mountain-true-img.png" id="bg-video" class="fullscreen-bg__video">
         <source src="../video/13299272.mp4" type="video/mp4">
@@ -26,12 +25,31 @@
 <!--Left Side Nav Bar-->
     <section class="nav-bar-outer">
       <div class="nav-bar-inner">
+        <a href="index.html"><div class="nav-bar-img"><img src="img/menu-logo-1.png"></div></a>
+        <div class="nav-bar-list">
+          <ul>
+            <!-- <a href="/"><li>INICIO</li></a>
+            <a href="/"><li>PARA PERSONAS DIGITALES</li></a>
+            <a href="/"><li>NOSOTROS</li></a>
+            <a href="/"><li>ESTEMOS EN CONTACTO</li></a> -->
+            <page-links></page-links>
+          </ul>
+        </div>
+
+
       </div>
     </section>
 <!-- Main Content Section -->
     <section class="main-content-section">
       <div class="main-content-top">
-        Hamburger and Image
+        <div id="ham-menu" class="hamburger-menu">
+          <ul>
+            <li class="burger-li"></li>
+            <li class="burger-li"></li>
+            <li class="burger-li"></li>
+          </ul>
+        </div>
+        <a><img src="./img/logo-150x41.png"></a>
       </div>
 
       <div class="main-content-bottom">
@@ -39,14 +57,14 @@
           <div class="main-content-left">
             <div class="content-left-text-box">
 
-              <section class="Nosotros-slice">
-                <div class="Nosotros-slice-inner">
-                  <h1>Nosotros</h1>
-                  <p>Somos un Integrador Móvil de Contenido Premium. Hemos establecido distintas alianzas con del mundo de las Telecomunicaciones y otros.</p>
-
-                  <p>Si eres empresa o persona experta en algún contenido relacionado a nuestras <a href="#"><span>“Verticales de negocios”</span></a> escríbenos <a href="#"><span>“Aquí”</span></a> y te ayudaremos a paquetizar y monetizar tu producto.</p>
+              <section class="Bienvenidos-slice">
+                <div class="Bienvenidos-slice-inner">
+                  <h1>¡Bienvenidos los que crean!</h1>
+                  <p>En Trimobile diseñamos experiencias multiplataforma. Trabajamos con los mejores operadores móviles brindando diariamente contenido premium a miles de personas en todo Latinoamerica 🙂</p>
+                  <button> <img src="img/download-icon copy.png">Descubre más</button>
                 </div>
               </section>
+
 
             </div>
           </div>
@@ -82,12 +100,12 @@
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 
 <!--Our Custom Script Files-->
-<!-- <script src="./js/app.js"></script> -->
-<!-- <script src="./js/controllers/mainController.js"></script> -->
+<script src="./angularJs/app.js"></script>
+<script src="./angularJs/mainController.js"></script>
+<script src="./angularJs/mainService.js"></script>
+<script src="./angularJs/directives/page-links.js"></script>
 <!-- <script src="./js/main.js"></script> -->
 <script src="./navJs/navbar.js"></script>
-<!-- <script src="./js/directives/page-links-dir.js"></script> -->
-
 
 </body>
 </html>
