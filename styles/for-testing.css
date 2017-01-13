@@ -3,3 +3,43 @@
   height: 400px;
   background: rgba(0,0,0, .6)
 }
+main{
+  background: red;
+}
+
+
+/*Bienvenidos slice Template CSS*/
+.Bienvenidos-slice{
+  color: white;
+}
+.Bienvenidos-slice-inner h1{
+  font-size: 4rem;
+  margin: 0 0 30px 0;
+  white-space: nowrap;
+}
+.Bienvenidos-slice-inner p{
+  font-size: 1rem;
+  line-height: 1.8rem;
+  margin: 0 0 30px 0;
+}
+
+/*Button Major*/
+.Bienvenidos-slice-inner button{
+  display: flex;
+  align-items: center;
+  background: #E37401;
+  padding: 13px 20px;
+  border: none;
+  font-size: .9rem;
+  font-weight: 400;
+  color: white;
+  border-radius: 3px;
+}
+.Bienvenidos-slice-inner button img{
+width: 15px;
+height: 15px;
+margin: 0 20px 0 0;
+}
+/*Button Major*/
+
+/*Bienvenidos slice Template CSS*/
