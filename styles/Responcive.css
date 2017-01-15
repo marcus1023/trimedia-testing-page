@@ -1,7 +1,9 @@
 .res-Bienvenidos-img{
   display: none;
 }
-
+.scroller-content-box h2, .scroller-content-box h3{
+  display: none;
+}
 
 @media (max-width: 600px){
 body{
