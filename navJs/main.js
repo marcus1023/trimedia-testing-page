@@ -1,39 +1,22 @@
-
-
 $( document ).ready(function() {
 
-// $('#form').on('submit', function() {
+	$('#emailSuccessMess').hide();
 
-	
-	
-// 	let name = $('#form input[name=name]');
-// 	let email = $('#form input[name=email]');
-// 	let message = $('#form textarea');
+	$(".hamburger-menu").hover(function(){
+	    $('.burger-li').css("background-color", "#e37401");
+		}, function(){
+	    $('.burger-li').css("background-color", "white");
+	});
 
-// 	// START emailjs
-// 	var service_id = 'my_mandrill'; MAILGUN
-// 	var template_id = 'feedback'; WHATEVER
-// 	var template_params = {
-// 		name: name,
-// 		reply_email: email,
-// 		message: message
-// 	};
-
-// 	emailjs.send(service_id,template_id,template_params);
-// 	// END emailjs
-
-
-// 	return false;
-// });
 
 
 $(".main").onepage_scroll({
-   sectionContainer: "section", 
-   easing: "ease",              
-                                
-   animationTime: 1000,         
-   pagination: true,            
-   updateURL: false,            
+   sectionContainer: "section",
+   easing: "ease",
+
+   animationTime: 1000,
+   pagination: true,
+   updateURL: false,
    beforeMove: function(index) {
 
       let $pane = $('#phone-slider .pane-' + index);
@@ -43,13 +26,56 @@ $(".main").onepage_scroll({
       $track.css('top', top);
 
    },
-   loop: false,                 
-   keyboard: true,              
-   responsiveFallback: false,    
-                                
-                                
-   direction: "vertical"        
+   loop: false,
+   keyboard: true,
+   responsiveFallback: false,
+
+
+   direction: "vertical"
 });
+
+
+
+
+
+$( ".digitales-options-one" ).click(function() {
+  $('.digitales-catigories-two').toggleClass( "shower");
+  $('.digitales-catigories-one').toggleClass( "hider");
+  $('.digitales-options-one').toggleClass( "digitales-b-border");
+  $('.digitales-options-two').toggleClass( "digitales-b-border");
+});
+
+$( ".digitales-options-two" ).click(function() {
+
+  $('.digitales-catigories-two').toggleClass( "shower");
+  $('.digitales-catigories-one').toggleClass( "hider");
+  $('.digitales-options-two').toggleClass( "digitales-b-border");
+  $('.digitales-options-one').toggleClass( "digitales-b-border");
+});
+
+$('#emailerSubmit').click(function(){
+	let name = $('#emailerName');
+  let userEmail = $('#emailerUser');
+  let userMessage = $('#emailerMessage');
+  let company = "marcus@userlite.com"
+  console.log("partial email")
+
+emailjs.send("mailgun","trimobile",{
+  name: name,
+  email: userEmail,
+  notes: userMessage,
+  company: company
+});
+
+
+	console.log('email test success!!!')
+
+	$('#emailerName').hide()
+	$('#emailerUser').hide()
+	$('#emailerMessage').hide()
+	$('#emailerSubmit').hide()
+	$('#emailSuccessMess').show()
+})
 
 
 });

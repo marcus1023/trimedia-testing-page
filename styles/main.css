@@ -45,7 +45,7 @@ body{
   justify-content: space-around;
   width: 95%;
   min-width: 600px;
-  height: 95%;
+  height: 100%;
   min-height: 500px;
   background: rgba(255,255,255, .6);
 }
@@ -89,12 +89,13 @@ body{
 
 /*Left Side Nav Bar*/
 .nav-bar-inner{
-  /*display: none;*/
+  /*position: absolute;*/
   flex-direction: column;
-
+  /*left: -250px;*/
   width: 250px;
   height: 100vh;
   background: #E37401;
+  transition: all .5s ease;
 }
 .nav-bar-img{
 margin: 40px 0 0 0;

@@ -1,113 +1,153 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="trimobile">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trimobile</title>
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/video.css">
-    <!-- <link rel="stylesheet" href="./styles/firefox.css"> -->
-    <link rel="stylesheet" href="./styles/slices.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <link rel="shortcut icon" href="img/menu-logo-1.png">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Trimobile</title>
+		<link rel="stylesheet" href="./styles/reset.css">
+		<!-- <link rel="stylesheet" href="./styles/main.css"> -->
+		<link rel="stylesheet" href="./styles/main-alt.css">
+		<link rel="stylesheet" href="./styles/video.css">
+		<!-- <link rel="stylesheet" href="./styles/firefox.css"> -->
+		<link rel="stylesheet" href="./styles/slices.css">
+		<link rel="stylesheet" href="./styles/onepage-scroll.css">
+		<link rel="stylesheet" href="./styles/nav-fix.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+		<link rel="shortcut icon" href="img/menu-logo-1.png">
 
 </head>
+<body>
+	<!-- <section class="video-container">
+		<video loop muted autoplay poster="img/dev-mountain-true-img.png" id="bg-video" class="fullscreen-bg__video">
+				<source src="../video/13299272.mp4" type="video/mp4">
+		</video>
+	</section> -->
+	<!--Left Side Nav Bar-->
+			<article class="nav-bar-outer">
+				<div class="nav-bar-inner">
+					<a href="index.html"><div class="nav-bar-img"><img src="img/menu-logo-1.png"></div></a>
+					<div class="nav-bar-list">
+						<ul>
+							<a href="./Bienvenidos.html"><li>INICIO</li></a>
+							<a href="./digitales.html"><li>PARA PERSONAS DIGITALES</li></a>
+							<a href="./Nosotros.html"><li>NOSOTROS</li></a>
+							<a href="./estemos.html"><li>ESTEMOS EN CONTACTO</li></a>
+						</ul>
+					</div>
 
-<main ng-controller="mainController">
-  <section class="video-container">
-    <video loop muted autoplay poster="img/dev-mountain-true-img.png" id="bg-video" class="fullscreen-bg__video">
-        <source src="../video/13299272.mp4" type="video/mp4">
-    </video>
-  </section>
 
-  <section class="main-body-section">
+				</div>
+			</article>
+	<!-- Main Content Section -->
+
+			<article class="main-content-section">
+				<div class="main-content-top">
+					<div id="ham-menu" class="hamburger-menu">
+						<ul>
+							<li class="burger-li"></li>
+							<li class="burger-li"></li>
+							<li class="burger-li"></li>
+						</ul>
+					</div>
+					<a href="./index.html"><img src="./img/logo-150x41.png"></a>
+				</div>
+
+
+
+			</article>
+<!--
+		<aside id="menu">
+			whatever menu garbage goes here
+
+	style
+	position fixed
+	top 0
+	left 0
+	width 300px
+	bottom 0
+	background color whatever
+
+		</aside> -->
+
+
+	<!-- <div id="page">
+
+
+		<form id="form">
+			<input type="text" name="name" />
+			<input type="email" name="email" placeholder="give it to me" />
+			<textarea name="message"></textarea>
+			<button / submit>
+		</form>
+
+	</div> -->
+
+
+	<div class="main">
+    <section class="Nosotros-slice scroller-content-box">
+ 		 <div class="Nosotros-slice-inner">
+ 			 <h1>Nosotros</h1>
+ 			 <p>Somos un Integrador Móvil de Contenido Premium. Hemos establecido distintas alianzas con del mundo de las Telecomunicaciones y otros.</p>
+
+ 			 <p>Si eres empresa o persona experta en algún contenido relacionado a nuestras <a href="#"><span>“Verticales de negocios”</span></a> escríbenos <a href="#"><span>“Aquí”</span></a> y te ayudaremos a paquetizar y monetizar tu producto.</p>
+ 		 </div>
+ 	 </section>
+ </div>
+
+
+
+
+<article ng-controller="mainController">
+
+	<article class="main-body-section">
 <!--Left Side Nav Bar-->
-    <section class="nav-bar-outer">
-      <div class="nav-bar-inner">
-        <a href="./index.html"><div class="nav-bar-img"><img src="img/menu-logo-1.png"></div></a>
-        <div class="nav-bar-list">
-          <ul>
-            <!-- <a href="/"><li>INICIO</li></a>
-            <a href="/"><li>PARA PERSONAS DIGITALES</li></a>
-            <a href="/"><li>NOSOTROS</li></a>
-            <a href="/"><li>ESTEMOS EN CONTACTO</li></a> -->
-            <page-links></page-links>
-          </ul>
-        </div>
+		<article class="nav-bar-outer">
+			<div class="nav-bar-inner">
+				<a href="index.html"><div class="nav-bar-img"><img src="img/menu-logo-1.png"></div></a>
+				<div class="nav-bar-list">
+					<ul>
+						<page-links></page-links>
+					</ul>
+				</div>
 
 
-      </div>
-    </section>
-<!-- Main Content Section -->
-    <section class="main-content-section">
-      <div class="main-content-top">
-        <div id="ham-menu" class="hamburger-menu">
-          <ul>
-            <li class="burger-li"></li>
-            <li class="burger-li"></li>
-            <li class="burger-li"></li>
-          </ul>
-        </div>
-        <a><img src="./img/logo-150x41.png"></a>
-      </div>
-
-      <div class="main-content-bottom">
-        <div class="main-content-outer">
-          <div class="main-content-left">
-            <div class="content-left-text-box">
-
-              <section class="Nosotros-slice">
-                <div class="Nosotros-slice-inner">
-                  <h1>Nosotros</h1>
-                  <p>Somos un Integrador Móvil de Contenido Premium. Hemos establecido distintas alianzas con del mundo de las Telecomunicaciones y otros.</p>
-
-                  <p>Si eres empresa o persona experta en algún contenido relacionado a nuestras <a href="#"><span>“Verticales de negocios”</span></a> escríbenos <a href="#"><span>“Aquí”</span></a> y te ayudaremos a paquetizar y monetizar tu producto.</p>
-                </div>
-              </section>
+			</div>
+		</article>
 
 
+	</article>
 
-            </div>
-          </div>
-
-          <div class="main-content-right">
-            <img src="./img/hand-mockup-2.png">
-            <div class="phone-slider" style="background: url('./old img/conectamos.jpg');  background-size: cover;"></div>
-          </div>
-        </div>
-      </div>
+</article>
 
 
-    </section>
+	<div id="phone-slider">
+		<div class="view">
+		  <div class="track">
+				<div style="background: url('./old img/conectamos.jpg');" class="pane pane-1 active"></div>
+				<div style="background: url('./img/variedad.jpg');" class="pane pane-2"></div>
+				<div style="background: url('./img/distribucion.jpg');" class="pane pane-3"></div>
+				<div style="background: url('./img/atendemos.jpg');" class="pane pane-4"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
 
 
-
-  </section>
-
-  <section>
-  </section>
-
-
-
-</main>
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap.js"></script> -->
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 
 <!--Our Custom Script Files-->
-<script src="./angularJs/app.js"></script>
-<script src="./angularJs/mainController.js"></script>
-<script src="./angularJs/mainService.js"></script>
-<script src="./angularJs/directives/page-links.js"></script>
-<!-- <script src="./js/main.js"></script> -->
+<!-- <script src="./angularJs/app.js"></script> -->
+<!-- <script src="./angularJs/mainController.js"></script> -->
+<!-- <script src="./angularJs/mainService.js"></script> -->
+<!-- <script src="./angularJs/directives/page-links.js"></script> -->
 <script src="./navJs/navbar.js"></script>
+<script src="./navJs/jquery.onepage-scroll.js"></script>
+<script src="./navJs/main.js"></script>
 
-</body>
 </html>

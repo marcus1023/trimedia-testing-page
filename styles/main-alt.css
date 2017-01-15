@@ -1,27 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
 
 #phone-slider {
-  width: 600px;
+  width: 500px;
   height: 700px;
   background: url('/img/hand-mockup-2.png') no-repeat top right;
   position: absolute;
+
+  top: 100px;
   bottom: 0;
   right: 100px;
-  z-index: 1000;
+  z-index: 300;
+  overflow: visible;
 }
 
 #phone-slider .view {
     width: 232px;
     height: 404px;
     position: absolute;
-    left: 280px;
+    left: 180px;
     top: 80px;
-    z-index: 9999;
+    z-index: 999;
     overflow: hidden;
 }
 #phone-slider .track {
   position: absolute;
-  top: 0;
   left: 0;
   transition: top 1000ms ease;
 }
@@ -34,7 +36,7 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  background-image: url('/img/phone-girl-mainScreen-placeholder.png');
+  background-image: url('/img/phone-girl-mainScreen-placeholder-edit.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -58,14 +60,16 @@ body{
   flex-direction: column;
   width: 100%;
   /*border: 2px solid red;*/
-  height: 100vh;
+  height: 90px;
+
+    transition: all .5s ease;
 }
 .main-content-top{
   display: flex;
   align-items: center;
   width: 100%;
   /*border: 2px solid black;*/
-  height: 60px;
+  height: 90px;
 }
 .main-content-bottom{
   display: flex;
@@ -132,6 +136,7 @@ body{
   width: 250px;
   height: 100vh;
   background: #E37401;
+  transition: all .5s ease;
 }
 .nav-bar-img{
 margin: 40px 0 0 0;
@@ -179,11 +184,20 @@ margin: 40px 0 0 0;
 .show-nav{
   left: 0;
 }
+.hide-nav{
+  display: none;
+}
 .move-body{
-  margin-left: 220px;
+  margin-left: 220px !important;
+      transition: all .2s ease;
 }
 .move-main{
-  left: 250px;
+  left: 140px !important;
+      transition: all .2s ease;
+}
+.scroll-nav-main{
+  left: 200px !important;
+  transition: all .2s ease;
 }
 
 /* Scroller Outer Section*/
@@ -197,26 +211,16 @@ margin: 40px 0 0 0;
   z-index: 600;
 }
 
-.scroller-section-one{
-  width: 100%;
-  height: 100vh;
-  background: rgba(0,0,0, .2);
+.scroller-content-box{
+  color: white;
+  width: 500px !important;
+  margin-left: 100px;
+  margin-top: 100px;
+
+  transition: all .5s ease !important;
 }
-.scroller-section-two{
-  width: 100%;
-  height: 100vh;
-  background: rgba(0,0,0, .8);
-}
-.scroller-section-three{
-  width: 100%;
-  height: 100vh;
-  background: rgba(0,0,0, .2);
-}
-.scroller-section-four{
-  width: 100%;
-  height: 100vh;
-  background: rgba(0,0,0, .8);
-}
+
+
 
 
 
