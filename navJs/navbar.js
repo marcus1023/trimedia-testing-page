@@ -3,8 +3,9 @@ $( document ).ready(function() {
 //
 
 $("#ham-menu").click(function() {
-
 $(".nav-bar-inner").toggleClass("show-nav");
+$(".main-content-section").toggleClass("move-body");
+$(".onepage-wrapper").toggleClass("move-main");
 console.log("done")
 
 });

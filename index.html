@@ -5,42 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trimobile</title>
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/main.css">
+    <!-- <link rel="stylesheet" href="./styles/main.css"> -->
+    <link rel="stylesheet" href="./styles/main-alt.css">
     <link rel="stylesheet" href="./styles/video.css">
     <!-- <link rel="stylesheet" href="./styles/firefox.css"> -->
     <link rel="stylesheet" href="./styles/slices.css">
+    <link rel="stylesheet" href="./styles/onepage-scroll.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="shortcut icon" href="img/menu-logo-1.png">
 
 </head>
+<body>
 
-<main ng-controller="mainController">
-  <section class="video-container">
-    <video loop muted autoplay poster="img/dev-mountain-true-img.png" id="bg-video" class="fullscreen-bg__video">
-        <source src="../video/13299272.mp4" type="video/mp4">
-    </video>
-  </section>
 
-  <section class="main-body-section">
+
+  <div class="main">
+     <section class="Bienvenidos-slice-slider">
+       <div class="Bienvenidos-slice-inner">
+         <h1>¡Bienvenidos los que crean!</h1>
+         <p>En Trimobile diseñamos experiencias multiplataforma. Trabajamos con los mejores operadores móviles brindando diariamente contenido premium a miles de personas en todo Latinoamerica 🙂</p>
+         <button> <img src="img/download-icon copy.png">Descubre más</button>
+       </div>
+     </section>
+
+     <section class="Bienvenidos-slice">
+       <div class="Bienvenidos-slice-inner">
+         <h1>¡Place holder!</h1>
+         <p>personas en todo Latinoamerica 🙂</p>
+         <button> <img src="img/download-icon copy.png">Descubre más</button>
+       </div>
+     </section>
+
+   <section class="Nosotros-slice">
+     <div class="Nosotros-slice-inner">
+       <h1>Nosotros</h1>
+       <p>Somos un Integrador Móvil de Contenido Premium. Hemos establecido distintas alianzas con del mundo de las Telecomunicaciones y otros.</p>
+
+       <p>Si eres empresa o persona experta en algún contenido relacionado a nuestras <a href="#"><span>“Verticales de negocios”</span></a> escríbenos <a href="#"><span>“Aquí”</span></a> y te ayudaremos a paquetizar y monetizar tu producto.</p>
+     </div>
+   </section>
+
+
+   <section class="Bienvenidos-slice">
+     <div class="Bienvenidos-slice-inner">
+       <h1>¡Place holder!</h1>
+       <p>personas en todo Latinoamerica 🙂</p>
+       <button> <img src="img/download-icon copy.png">Descubre más</button>
+     </div>
+   </section>
+
+ </div>
+
+
+
+
+<article ng-controller="mainController">
+
+  <article class="main-body-section">
 <!--Left Side Nav Bar-->
-    <section class="nav-bar-outer">
+    <article class="nav-bar-outer">
       <div class="nav-bar-inner">
         <a href="index.html"><div class="nav-bar-img"><img src="img/menu-logo-1.png"></div></a>
         <div class="nav-bar-list">
           <ul>
-            <!-- <a href="/"><li>INICIO</li></a>
-            <a href="/"><li>PARA PERSONAS DIGITALES</li></a>
-            <a href="/"><li>NOSOTROS</li></a>
-            <a href="/"><li>ESTEMOS EN CONTACTO</li></a> -->
             <page-links></page-links>
           </ul>
         </div>
 
 
       </div>
-    </section>
+    </article>
 <!-- Main Content Section -->
-    <section class="main-content-section">
+
+    <article class="main-content-section">
       <div class="main-content-top">
         <div id="ham-menu" class="hamburger-menu">
           <ul>
@@ -70,20 +107,14 @@
         </div>
       </div>
 
+    </article>
 
-    </section>
+  </article>
 
-
-
-  </section>
-
-  <section>
-  </section>
+</article>
 
 
-
-</main>
-
+</body>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
@@ -101,5 +132,7 @@
 <!-- <script src="./js/main.js"></script> -->
 <script src="./navJs/navbar.js"></script>
 
-</body>
+<script src="./navJs/jquery.onepage-scroll.js"></script>
+<script src="./navJs/main.js"></script>
+
 </html>

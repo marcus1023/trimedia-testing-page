@@ -1,3 +1,4 @@
+
 /*Bienvenidos slice Template CSS*/
 .Bienvenidos-slice{
   color: white;
@@ -11,6 +12,15 @@
   font-size: 1rem;
   line-height: 1.8rem;
   margin: 0 0 30px 0;
+}
+
+/*Bienvenidos SLIDER!!!! slice Template CSS*/
+
+.Bienvenidos-slice-slider{
+  position: absolute;
+  top: 200px;
+  height: 400px;
+  width: 580px;
 }
 
 /*Button Major*/
