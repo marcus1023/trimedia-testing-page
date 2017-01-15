@@ -66,8 +66,7 @@ console.log("this worked")
 
 
 if(!name || !userEmail || !userMessage){
-$("#emailSuccessMess").text("Lo siento, parece que has olvidado un feild...")
-$("#emailSuccessMess").css("color", "red")
+$("#emailSuccessMess").text("Los errores de validación se produjeron. Por favor, confirme los campos y enviarlo de nuevo.")
 $("#emailSuccessMess").css("font-weight", "400")
 
 $('#emailSuccessMess').show()
