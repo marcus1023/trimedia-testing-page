@@ -8,6 +8,19 @@ body{
   background: #E37401;
   z-index: 0;
 }
+h2{
+  text-align: center;
+  font-size: 4rem;
+  /*font-weight: 500;*/
+}
+h3{
+  text-align: center;
+  width: 70%;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid white;
+}
 .scroller-content-box{
   color: white;
   margin: 0px auto;
@@ -18,11 +31,15 @@ body{
   }
 
 .scroller-content-box h1 {
+  text-align: center;
+  white-space:normal;
+  width: 100%;
     font-size: 1.9rem;
     font-weight: 400;
-    margin: 0 0 20px 10px;
+    margin: 0 0 20px 0px;
     white-space: nowrap;
 }
+
 .scroller-content-box p{
 margin-left: 10px;
 }
@@ -97,7 +114,9 @@ margin-left: 10px;
   width: 100%;
   display: block !important;
 }
-
+.nost-h2{
+  margin-top: -70px;
+}
 
 
 
