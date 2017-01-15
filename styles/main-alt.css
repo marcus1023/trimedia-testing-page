@@ -5,11 +5,10 @@
   height: 700px;
   background: url('/img/hand-mockup-2.png') no-repeat top right;
   position: absolute;
-
   top: 100px;
   bottom: 0;
   right: 100px;
-  z-index: 300;
+  /*z-index: 300;*/
   overflow: visible;
 }
 
@@ -19,7 +18,7 @@
     position: absolute;
     left: 180px;
     top: 80px;
-    z-index: 999;
+    /*z-index: 999;*/
     overflow: hidden;
 }
 #phone-slider .track {
@@ -100,7 +99,7 @@ body{
   left: -400px;
 }
 .phone-slider{
-  z-index: 100;
+  /*z-index: 100;*/
   position: absolute;
   top: 78px;
   left: 76px;

@@ -1,7 +1,8 @@
 $( document ).ready(function() {
 
-	$('#emailSuccessMess').hide();
 
+
+	$('#emailSuccessMess').hide();
 	$(".hamburger-menu").hover(function(){
 	    $('.burger-li').css("background-color", "#e37401");
 		}, function(){
