@@ -2,7 +2,7 @@
   display: none;
 }
 .scroller-content-box h2, .scroller-content-box h3{
-  display: none;
+display: none
 }
 
 @media (max-width: 600px){
@@ -10,7 +10,11 @@ body{
   background: #E37401;
   z-index: 0;
 }
+.scroller-content-box h2, .scroller-content-box h3{
+display: block;
+}
 h2{
+  margin-left: 0px;
   text-align: center;
   font-size: 4rem;
   /*font-weight: 500;*/

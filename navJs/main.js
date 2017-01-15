@@ -54,29 +54,47 @@ $( ".digitales-options-two" ).click(function() {
   $('.digitales-options-one').toggleClass( "digitales-b-border");
 });
 
+
+
 $('#emailerSubmit').click(function(){
-	let name = $('#emailerName');
-  let userEmail = $('#emailerUser');
-  let userMessage = $('#emailerMessage');
+console.log("this worked")
+
+	let name = $('#emailerName').val();
+  let userEmail = $('#emailerUser').val();
+  let userMessage = $('#emailerMessage').val();
   let company = "marcus@userlite.com"
-  console.log("partial email")
-
-emailjs.send("mailgun","trimobile",{
-  name: name,
-  email: userEmail,
-  notes: userMessage,
-  company: company
-});
 
 
-	console.log('email test success!!!')
+if(!name || !userEmail || !userMessage){
+$("#emailSuccessMess").text("Lo siento, parece que has olvidado un feild...")
+$("#emailSuccessMess").css("color", "red")
+$("#emailSuccessMess").css("font-weight", "400")
 
+$('#emailSuccessMess').show()
+return
+}else{
 	$('#emailerName').hide()
 	$('#emailerUser').hide()
 	$('#emailerMessage').hide()
 	$('#emailerSubmit').hide()
 	$('#emailSuccessMess').show()
+$("#emailSuccessMess").css("color", "white")
+
+
+	emailjs.send("mailgun","trimobile",{
+	  name: name,
+	  email: userEmail,
+	  notes: userMessage,
+	  company: company
+	});
+}
+
+		console.log('email test success!!!')
+
+
+
 })
+
 
 
 });

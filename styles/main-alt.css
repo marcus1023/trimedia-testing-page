@@ -218,7 +218,9 @@ margin: 40px 0 0 0;
 
   transition: all .5s ease !important;
 }
-
+#emailSuccessMess{
+  padding: 10px;
+}
 
 
 
