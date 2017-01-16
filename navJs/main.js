@@ -1,6 +1,13 @@
 $( document ).ready(function() {
 
 
+$('#mobile-hamburger').click(function(){
+	$('#mobile-hamburger-white').toggleClass( "shower");
+	$('.mobile-menu-spacer').toggleClass( "shower");
+	$('.mobile-menu').toggleClass( "shower");
+	$('#mobile-hamburger').toggleClass( "hider");
+})
+
 
 	$('#emailSuccessMess').hide();
 	$(".hamburger-menu").hover(function(){
