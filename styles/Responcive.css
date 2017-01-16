@@ -5,6 +5,66 @@
 display: none
 }
 
+/*at 1200px*/
+@media (max-width: 1200px){
+  #phone-slider {
+    width: 540px;
+    height: 700px;
+    background: url('/img/hand-mockup-2.png') no-repeat top right;
+    position: absolute;
+    bottom: -100px ;
+    right: 0;
+    /*z-index: 300;*/
+    overflow: visible;
+  }
+
+}
+
+@media (max-width: 1000px){
+  #phone-slider {
+    width: 340px;
+    height: 600px;
+    background: url('/img/hand-mockup-2.png') no-repeat top right;
+    background-size: 160%;
+    position: absolute;
+    bottom: -200px ;
+    right: 0;
+    /*z-index: 300;*/
+    overflow: visible;
+  }
+  #phone-slider .view {
+      width: 162px;
+      height: 277px;
+      position: absolute;
+      left: 120px;
+      top: 53px;
+      /*z-index: 999;*/
+      overflow: hidden;
+  }
+  #phone-slider .pane {
+    width: 162px;
+    height: 277px;
+    background-size: cover !important;
+  }
+}
+@media (max-width: 800px){
+  #phone-slider {
+    width: 340px;
+    height: 600px;
+    background: url('/img/hand-mockup-2.png') no-repeat top right;
+    background-size: 160%;
+    position: absolute;
+    bottom: -200px ;
+    right: -80px;
+    /*z-index: 300;*/
+    overflow: visible;
+  }
+}
+
+
+
+/*at 600 px*/
+
 @media (max-width: 600px){
 body{
   background: #E37401;
