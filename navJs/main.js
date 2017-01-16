@@ -7,6 +7,12 @@ $('#mobile-hamburger').click(function(){
 	$('.mobile-menu').toggleClass( "shower");
 	$('#mobile-hamburger').toggleClass( "hider");
 })
+$('#mobile-hamburger-white').click(function(){
+	$('#mobile-hamburger-white').toggleClass( "hider");
+	$('.mobile-menu-spacer').toggleClass( "hider");
+	$('.mobile-menu').toggleClass( "hider");
+	$('#mobile-hamburger').toggleClass( "hider");
+})
 
 
 	$('#emailSuccessMess').hide();
