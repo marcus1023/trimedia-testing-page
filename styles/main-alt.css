@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
 
 #phone-slider {
-  width: 500px;
+  width: 540px;
   height: 700px;
   background: url('/img/hand-mockup-2.png') no-repeat top right;
   position: absolute;
-  top: 100px;
-  bottom: 0;
-  right: 100px;
+  bottom: -100px;
+  right: 140px;
   /*z-index: 300;*/
   overflow: visible;
 }
@@ -16,7 +15,7 @@
     width: 232px;
     height: 404px;
     position: absolute;
-    left: 180px;
+    left: 220px;
     top: 80px;
     /*z-index: 999;*/
     overflow: hidden;
