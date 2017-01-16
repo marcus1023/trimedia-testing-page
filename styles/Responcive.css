@@ -271,10 +271,10 @@ margin-left: 10px;
   border-bottom: 1px solid rgba(255,255,255, 1)
 }
 .Estemos-slice-upper input{
-  width: 43%;
+  width: 45%;
 }
-.Estemos-slice-upper input:first-child{
-  margin-right: 3px;
+.Estemos-slice-upper input:focus{
+  background: #E37401;
 }
 
 /* responcive hides*/
