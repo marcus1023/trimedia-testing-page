@@ -61,31 +61,15 @@ display: none
     background-size: cover !important;
   }
 }
-@media (max-width: 760px){
+@media (max-width: 860px){
   #phone-slider {
-    width: 340px;
-    height: 600px;
-    background: url('/img/hand-mockup-2.png') no-repeat top right;
-    background-size: 160%;
-    position: absolute;
-    bottom: -200px ;
-    right: -80px;
-    /*z-index: 300;*/
-    overflow: visible;
+display: none;
   }
   #phone-slider .view {
-      width: 190px;
-      height: 280px;
-      position: absolute;
-      left: 122px;
-      top: 55px;
-      /*z-index: 999;*/
-      overflow: hidden;
+display: none;
   }
   #phone-slider .pane {
-    width: 172px;
-    height: 310px;
-    background-size: cover !important;
+display: none;
   }
 }
 
@@ -94,6 +78,16 @@ display: none
 /*at 600 px*/
 
 @media (max-width: 600px){
+  .digitales-options-outer {
+    width: 100% !important;
+    text-align: center;
+    background: rgba(0,0,0, .0);
+    padding: 20px;
+    height: 300px;
+}
+  .grey-boxer{
+  background: rgba(0,0,0, .0)
+  }
 body{
   background-image: url('/img/phone-girl-mainScreen-placeholder-edit.jpg');
   background-size: cover;
@@ -276,8 +270,12 @@ margin-left: 10px;
   color: white;
   border-bottom: 1px solid rgba(255,255,255, 1)
 }
-
-
+.Estemos-slice-upper input{
+  width: 43%;
+}
+.Estemos-slice-upper input:first-child{
+  margin-right: 3px;
+}
 
 /* responcive hides*/
 .main-content-top{
