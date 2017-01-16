@@ -2,17 +2,17 @@ $( document ).ready(function() {
 
 
 $('#mobile-hamburger').click(function(){
-	$('#mobile-hamburger-white').toggleClass( "shower");
+	// $('#mobile-hamburger-white').toggleClass( "shower");
 	$('.mobile-menu-spacer').toggleClass( "shower");
 	$('.mobile-menu').toggleClass( "shower");
-	$('#mobile-hamburger').toggleClass( "hider");
+	// $('#mobile-hamburger').toggleClass( "hider");
 })
-$('#mobile-hamburger-white').click(function(){
-	$('#mobile-hamburger-white').toggleClass( "hider");
-	$('.mobile-menu-spacer').toggleClass( "hider");
-	$('.mobile-menu').toggleClass( "hider");
-	$('#mobile-hamburger').toggleClass( "hider");
-})
+// $('#mobile-hamburger-white').click(function(){
+// 	$('#mobile-hamburger-white').toggleClass( "hider");
+// 	$('.mobile-menu-spacer').toggleClass( "hider");
+// 	$('.mobile-menu').toggleClass( "hider");
+// 	$('#mobile-hamburger').toggleClass( "hider");
+// })
 
 
 	$('#emailSuccessMess').hide();
@@ -100,9 +100,6 @@ $("#emailSuccessMess").css("color", "white")
 	  company: company
 	});
 }
-
-		console.log('email test success!!!')
-
 
 
 })
