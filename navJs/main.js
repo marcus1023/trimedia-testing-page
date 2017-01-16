@@ -84,7 +84,7 @@ $("#emailSuccessMess").css("font-weight", "400")
 
 $('#emailSuccessMess').show()
 return
-}else{
+}else {
 	$('#emailerName').hide()
 	$('#emailerUser').hide()
 	$('#emailerMessage').hide()

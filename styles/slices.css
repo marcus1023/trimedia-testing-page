@@ -83,6 +83,9 @@ margin: 0 20px 0 0;
  border-radius: 5px;
  color: white;
 }
+.Estemos-slice-upper input:first-child{
+  margin-right: 3px;
+}
 .Estemos-slice-lower input{
   display: inline-block;
   width: 95%;
