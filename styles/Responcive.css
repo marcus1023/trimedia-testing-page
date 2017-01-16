@@ -4,10 +4,9 @@
 .scroller-content-box h2, .scroller-content-box h3{
 display: none
 }
-
-
-
-
+.mobile-hamburger{
+  display: none;
+}
 
 
 
@@ -206,6 +205,18 @@ margin-left: 10px;
 .nost-h2-2{
   margin-top: -10px;
 }
+
+/*mobile menu*/
+.mobile-hamburger{
+  display: flex;
+  justify-content: flex-end;
+}
+.mobile-hamburger img{
+  margin: 20px 20px 0 0;
+  width: 30px;
+  height: 20px;
+}
+
 
 
 
