@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
 
 $('#mobile-hamburger').click(function(){
-	// $('#mobile-hamburger-white').toggleClass( "shower");
+	$('.mobile-logo').toggleClass( "shower");
 	$('.mobile-menu-spacer').toggleClass( "shower");
 	$('.mobile-menu').toggleClass( "shower");
 	// $('#mobile-hamburger').toggleClass( "hider");

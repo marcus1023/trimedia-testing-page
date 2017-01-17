@@ -1,4 +1,6 @@
-
+.mobile-logo{
+  display: none;
+}
 .res-Bienvenidos-img{
   display: none;
 }
@@ -82,6 +84,7 @@ display: none;
 /*at 600 px*/
 
 @media (max-width: 600px){
+
   .digitales-options-outer {
     width: 100% !important;
     text-align: center;
@@ -238,24 +241,33 @@ margin-left: 10px;
 }
 .mobile-hamburger img{
   opacity: .9;
-  margin: 10px 10px 0 0;
+  margin: 14px 10px 0 0;
   width: 30px;
   height: 20px;
-  z-index: 1;
+  z-index: 301;
 }
 .mobile-menu{
   position: absolute;
   top:0;
   width: 100%;
-  background: rgba(	0,0,0, .4);
+  background: rgba(	0,0,0, .8);
   color: white;
+  z-index: 300;
 }
 
+.mobile-logo img{
+  opacity: .9;
+  position: absolute;
+  width: 45px;
+  z-index: 500;
+  top: 8px;
+  right: 60px;
+}
 .mobile-hamburger-white img{
   position: absolute;
   opacity: .8;
   right: 10px;
-  margin: 10px 0 0 0;
+  margin: 14px 0 0 0;
   width: 30px;
   height: 20px;
   z-index: 500;
@@ -263,8 +275,9 @@ margin-left: 10px;
 .mobile-menu-spacer{
   opacity: .0;
   width: 100%;
-  height: 150px;
+  height: 200px;
   background: white;
+
 }
 .mobile-menu ul{
   width: 100%;
